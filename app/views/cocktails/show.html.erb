@@ -1,0 +1,21 @@
+
+  <div class="row">
+    <!-- <div class="col-xs-12 col-md-10 col-md-offset-1"> -->
+      <div class="cocktail-card">
+        <div class="cocktail-content">
+          <h1 class="text-center"><%= @cocktail.name %></h1>
+          <div class="cocktail-recipe">
+            <ul class="list-group">
+              <% @cocktail.doses.each do |dose| %>
+                <li class="list-item">
+                  <%= image_tag "orange.png", class: "list-bullet"%>  <span><%= dose.description %> <%= Ingredient.find(dose.ingredient_id).name.capitalize %></span>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+          <%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail) %>
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+
