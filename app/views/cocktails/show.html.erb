@@ -4,6 +4,7 @@
       <div class="cocktail-card">
         <div class="cocktail-content">
           <h1 class="text-center"><%= @cocktail.name %></h1>
+          <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
           <div class="cocktail-recipe">
             <ul class="list-group">
               <% @cocktail.doses.each do |dose| %>
