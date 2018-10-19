@@ -5,7 +5,8 @@
   background-position: center;
   color: white;
   position: relative;
-  border: solid 1px $dark-orange;
+  border: solid 1px $dark-pink;
+  border-radius: 5px;
 }
 
 .card-user {
@@ -42,9 +43,9 @@
   right: 0;
   width: 100%;
   z-index: 2;
-  background: black;
+  background: $pink;
   opacity: 0;
 }
 .card-link:hover {
-  opacity: 0.1;
+  opacity: 0.2;
 }
