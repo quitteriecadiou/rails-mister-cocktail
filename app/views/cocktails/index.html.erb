@@ -1,14 +1,12 @@
  <div class="wrapper">
   <div class="container white-container">
-    <h1 class="text-center">Cocktail Menu</h1>
     <div class="row">
       <% @cocktails.each do |cocktail| %>
-        <div class="col-xs-12 col-sm-3">
+        <div class="col-xs-12 col-sm-4">
           <div class="card">
             <%= link_to "", cocktail_path(cocktail), class: "card-link" %>
             <div class="card-description">
-              <h2><%= cocktail.name %></h2>
-              <p>Amazing cocktail</p>
+              <h1><%= cocktail.name %></h1>
             </div>
           </div>
         </div>

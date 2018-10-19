@@ -1,12 +1,15 @@
 .card {
   height: 175px;
-
-  background-size: cover !important;
-  background-position: center;
+  background-color: white;
   color: white;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   border: solid 1px $dark-pink;
   border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .card-user {
@@ -24,7 +27,7 @@
   text-transform: uppercase;
 }
 .card-description {
-  position: absolute;
+  // position: absolute;
   bottom: 10px;
   left: 10px;
 }
@@ -43,9 +46,8 @@
   right: 0;
   width: 100%;
   z-index: 2;
-  background: $pink;
-  opacity: 0;
 }
 .card-link:hover {
+  background: $pink;
   opacity: 0.2;
 }

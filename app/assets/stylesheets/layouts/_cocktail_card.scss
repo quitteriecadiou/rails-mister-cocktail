@@ -12,11 +12,41 @@
   // opacity: 0.85;
   width: 50%;
   height: 80%;
-  // position: relative;
+  position: absolute;
   // left: 15%;
   // top: 10
   padding: 10px 20px;
   border-radius: 10px;
+}
+
+.cocktail-header {
+  display: flex;
+  align-items: center;
+}
+
+.cocktail-header img {
+  flex: 0 0 150px;
+}
+
+.cocktail-header h1 {
+  flex: 1 0 auto;
+}
+
+
+.cocktail-description {
+  display: flex;
+}
+
+.cocktail-side {
+  flex: 0 0 150px;
+}
+
+.cocktail-list {
+  flex: 1 0 auto;
+}
+
+.card-image {
+  border-radius: 50%;
 }
 
 

@@ -1,6 +1,5 @@
 .wrapper {
   background-image: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.1)), asset-url('wrapper.jpg');
   background-size: cover;
-  background-position: center;
-  height: 100vh;
+  background-repeat: repeat-y;
 }
