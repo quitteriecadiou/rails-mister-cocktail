@@ -1,6 +1,12 @@
-.wrapper {
+.image-wrapper {
   background-image: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.1)), asset-url('wrapper.jpg');
   background-size: cover;
-  background-repeat: repeat-y;
+  background-attachment: fixed;
+}
+
+.pink-wrapper {
+  background-color: $light-pink;
+  background-size: cover;
   height: 100vh;
+  opacity: 0.5;
 }

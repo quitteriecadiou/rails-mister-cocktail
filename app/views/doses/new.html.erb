@@ -1,7 +1,20 @@
-<h1>new dose</h1>
-
-<%= simple_form_for [@dose.cocktail, @dose] do |f| %>
-  <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.button :submit %>
-<% end %>
+<div class="pink-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs 12 col-md-6 col-md-offset-3">
+        <div class="form-background">
+          <div class="form-header">
+            <h1 class="text-center">new dose</h1>
+          </div>
+          <div class="form-content">
+            <%= simple_form_for [@dose.cocktail, @dose], class: "form-inline" do |f| %>
+              <%= f.input :description %>
+              <%= f.association :ingredient %>
+              <%= f.button :submit, class: "pink-btn"%>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

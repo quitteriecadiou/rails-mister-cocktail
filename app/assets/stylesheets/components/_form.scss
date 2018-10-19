@@ -1,0 +1,17 @@
+.form-background {
+  background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), asset-url('form-background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  height: 100vh;
+  top: 0;
+
+}
+
+.form-content label {
+  font-weight: lighter;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
