@@ -8,7 +8,7 @@
             <ul class="list-group">
               <% @cocktail.doses.each do |dose| %>
                 <li class="list-item">
-                  <%= image_tag "orange.png", class: "list-bullet"%>  <span><%= dose.description %> <%= Ingredient.find(dose.ingredient_id).name.capitalize %></span>
+                  <%= image_tag "orange.png", class: "list-bullet"%>  <span><%= dose.description %> <%= Ingredient.find(dose.ingredient_id).name.capitalize %></span><%= link_to "Delete", dose_path(dose), method: :delete %>
                 </li>
               <% end %>
             </ul>
