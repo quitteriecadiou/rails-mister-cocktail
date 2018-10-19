@@ -1,29 +1,33 @@
 
-  <div class="wrapper">
+  <div class="wrapper cocktail-card">
     <!-- <div class="col-xs-12 col-md-10 col-md-offset-1"> -->
-      <div class="cocktail-card">
-        <div class="cocktail-content">
-          <div class="cocktail-header">
-            <%= cl_image_tag @cocktail.photo, height: 150, width: 150, class: "card-image" %>
-            <h1 class="text-center"><%= @cocktail.name %></h1>
+
+      <div class="cocktail-content">
+        <div class="cocktail-header">
+          <%= cl_image_tag @cocktail.photo, height: 150, width: 150, class: "card-image" %>
+          <h1 class="text-center"><%= @cocktail.name %></h1>
+        </div>
+        <div class="cocktail-decription">
+          <div class="cocktail-side">
+
           </div>
           <div class="cocktail-recipe">
-            <div class="cocktail-side">
-
-            </div>
             <div class="cocktail-list">
               <ul class="list-group">
                 <% @cocktail.doses.each do |dose| %>
                   <li class="list-item">
-                    <%= image_tag "orange.png", class: "list-bullet"%>  <span><%= dose.description %> <%= Ingredient.find(dose.ingredient_id).name.capitalize %></span><%= link_to "Delete", dose_path(dose), method: :delete %>
+                    <%= image_tag "cocktail.svg", class: "list-bullet"%>  <span><%= dose.description %> <%= Ingredient.find(dose.ingredient_id).name.capitalize %></span> | <%= link_to "Delete", dose_path(dose), method: :delete %>
                   </li>
                 <% end %>
               </ul>
-              <%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail) %>
+              <div class="cocktail-dose">
+                <%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail) %>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     <!-- </div> -->
   </div>
 
